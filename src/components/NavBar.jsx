@@ -6,7 +6,7 @@ const NavBar = () => {
           <a href='/' className='flex items-center space-x-3 rtl:space-x-reverse'>
             <img
               src='/assets/img/logo-sls-blanco.png'
-              className='h-8'
+              className='h-10'
               alt='Sls Logistics'
             />
             <span className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
