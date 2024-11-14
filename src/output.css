@@ -643,6 +643,10 @@ video {
   height: 100vh;
 }
 
+.h-20 {
+  height: 5rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
