@@ -15,7 +15,7 @@ const Cover = () => {
           <source src={videoCover} type='video/mp4' />
           Tu navegador no soporta el video.
         </video>
-        <div className='absolute top-0 left-0 w-full h-full bg-black opacity-80'></div>
+        <div className='absolute top-0 left-0 w-full h-full bg-black opacity-60'></div>
         <div className='relative z-10 flex flex-col items-center justify-start gap-28 w-full h-full'>
         <img
               src='/assets/img/logo-sls-blanco.png'

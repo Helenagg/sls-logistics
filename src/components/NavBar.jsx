@@ -1,9 +1,31 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
+const [isScrolled, setIsScrolled] = useState(false);
+const navRef = useRef(null);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      setIsScrolled(!entry.isIntersecting)
+    },
+    {root: null, threshold: 1.0}
+  );
+
+  if (navRef.current) {
+    observer.observe(navRef.current)
+  }
+
+  return () => {
+    if (navRef.current) observer.unobserve(navRef.current)
+  }
+}, [])
+// className='border-gray-200 bg-black dark:bg-gray-800 dark:border-gray-700'
   return (
     <>
-      <nav className='border-gray-200 bg-black dark:bg-gray-800 dark:border-gray-700'>
+    <div className="h-1" ref={navRef}></div>
+      <nav className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${isScrolled ? 'translate-y-0 bg-black' : 'translate-y-0'} border-gray-200 dark:bg-gray-800 dark:border-gray-700`}>
         <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
           <Link href='/' className='flex items-center space-x-3 rtl:space-x-reverse'>
             <img
