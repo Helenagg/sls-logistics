@@ -24,7 +24,7 @@ useEffect(() => {
 // className='border-gray-200 bg-black dark:bg-gray-800 dark:border-gray-700'
   return (
     <>
-    <div className="h-1" ref={navRef}></div>
+    <div className="h-1 bg-black opacity-80" ref={navRef}></div>
       <nav className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${isScrolled ? 'translate-y-0 bg-black' : 'translate-y-0'} border-gray-200 dark:bg-gray-800 dark:border-gray-700`}>
         <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
           <Link href='/' className='flex items-center space-x-3 rtl:space-x-reverse'>
@@ -33,9 +33,6 @@ useEffect(() => {
               className='h-10'
               alt='Sls Logistics'
             />
-            <span className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
-              SLS Logistics
-            </span>
           </Link>
           <button
             data-collapse-toggle='navbar-solid-bg'
