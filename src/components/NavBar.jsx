@@ -1,18 +1,39 @@
+import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
+const [isScrolled, setIsScrolled] = useState(false);
+const navRef = useRef(null);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      setIsScrolled(!entry.isIntersecting)
+    },
+    {root: null, threshold: 1.0}
+  );
+
+  if (navRef.current) {
+    observer.observe(navRef.current)
+  }
+
+  return () => {
+    if (navRef.current) observer.unobserve(navRef.current)
+  }
+}, [])
+// className='border-gray-200 bg-black dark:bg-gray-800 dark:border-gray-700'
   return (
     <>
-      <nav className='border-gray-200 bg-black dark:bg-gray-800 dark:border-gray-700'>
+    <div className="h-1 bg-black opacity-80" ref={navRef}></div>
+      <nav className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${isScrolled ? 'translate-y-0 bg-black' : 'translate-y-0'} border-gray-200 dark:bg-gray-800 dark:border-gray-700`}>
         <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
-          <a href='/' className='flex items-center space-x-3 rtl:space-x-reverse'>
+          <Link href='/' className='flex items-center space-x-3 rtl:space-x-reverse'>
             <img
               src='/assets/img/logo-sls-blanco.png'
-              className='h-8'
+              className='h-10'
               alt='Sls Logistics'
             />
-            <span className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
-              SLS Logistics
-            </span>
-          </a>
+          </Link>
           <button
             data-collapse-toggle='navbar-solid-bg'
             type='button'
@@ -38,26 +59,26 @@ const NavBar = () => {
           <div className='hidden w-full md:block md:w-auto md:pr-10' id='navbar-solid-bg'>
             <ul className='flex flex-col font-medium mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700'>
               <li>
-                <a
+                <Link
                   href='/'
                   className='block py-2 px-3 md:p-0 text-white hover:text-primary rounded'
                   aria-current='page'>
                   Quiénes Somos
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='/'
                   className='block py-2 px-3 md:p-0 text-white hover:text-primary rounded'>
                   Contacto
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href='/'
                   className='block py-2 px-3 md:p-0 text-white hover:text-primary rounded'>
                   Actualidad
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
