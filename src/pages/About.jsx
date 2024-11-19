@@ -33,7 +33,8 @@ const About = ({ isHomePage }) => {
   ];
   return (
     <>
-      <div className={`bg-black opacity-90 text-white ${isHomePage ? 'mt-0' : 'mt-20'} `}>
+      {/* <div className={`bg-black opacity-90 text-white ${isHomePage ? 'mt-0' : 'mt-20'} `}> */}
+      <div className={`bg-black opacity-90 text-white`}>
         <div className='flex flex-col items-center justify-start w-full h-full'>
           <img
             src='/logo-sls-blanco.png'
