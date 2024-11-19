@@ -10,6 +10,8 @@ import ScrollToTop from './components/ScrollToTop';
 import Blog from './pages/Blog';
 
 //TODO: Pendiente confirmar como van a ser los post si con enlances a noticias o con otra pagina con el desarrollo de la noticia
+//TODO: Card de actualidad para Home page
+//TODO: Textos legales
 
 function App() {
   return (
