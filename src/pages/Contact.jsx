@@ -27,7 +27,7 @@ const Contact = () => {
   ];
   return (
     <>
-      <div className='bg-black opacity-80'>
+      <div className='bg-gray-900'>
         <div className='bg-gradient-to-r from-primary to-gray-800 w-full h-48'></div>
         <div className='-mt-20 mb-6 px-4'>
           <ContactForm />
