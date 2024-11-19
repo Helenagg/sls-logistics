@@ -1,7 +1,6 @@
 import ContactForm from "../components/ContactForm"
 import Cover from "../components/Cover"
 import About from "./About"
-import Contact from "./Contact"
 
 const Home = () => {
   return (
