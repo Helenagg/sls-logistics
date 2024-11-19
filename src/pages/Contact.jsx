@@ -1,60 +1,129 @@
+import { FaRegPaperPlane } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { FaPhoneVolume } from "react-icons/fa6";
+import { MdOutlineMarkEmailRead } from "react-icons/md";
+import { MdSchedule } from "react-icons/md";
+import Card from '../components/Card';
+
 const Contact = () => {
+
+  const cardData = [
+    {
+      title: 'Teléfono',
+      content: '+34 678 218 915',
+      content2: '+34 622 468 165',
+      icon: FaPhoneVolume,
+    },
+    {
+      title: 'Email',
+      content: 'info@slsanbar.es',
+      content2: '',
+      icon: MdOutlineMarkEmailRead,
+    },
+    {
+      title: 'Horarios de Oficina',
+      content: 'Lunes a Viernes',
+      content2: '9:00-14:00 y 16:00-20:00',
+      icon: MdSchedule,
+    },
+  ]
   return (
     <>
-    <div className="font-[sans-serif]">
-      <div className="bg-gradient-to-r from-blue-700 to-blue-300 w-full h-36"></div>
-      <div className="-mt-20 mb-6 px-4">
-        <div className="mx-auto max-w-6xl shadow-lg p-8 relative bg-white rounded-lg">
-          <h2 className="text-xl text-gray-800 font-bold">Product or Service Inquiry</h2>
+    <div className='bg-black opacity-80'>
+      <div className='bg-gradient-to-r from-primary to-gray-800 w-full h-48'></div>
+      <div className='-mt-20 mb-6 px-4'>
+        <div className='mx-auto max-w-6xl shadow-md shadow-primary p-8 relative bg-white rounded-lg'>
+          <h2 className='text-xl text-gray-700 font-bold'>
+            Cuéntanos en qué podemos ayudarte:
+          </h2>
 
-          <form className="mt-8 grid sm:grid-cols-2 gap-6">
+          <form className='mt-8 grid sm:grid-cols-2 gap-6'>
             <div>
-              <input type='text' placeholder='Name'
-                className="w-full rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]" />
+              <input
+                type='text'
+                placeholder='Nombre'
+                className='w-full rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#efc753]'
+              />
             </div>
             <div>
-              <input type='email' placeholder='Email'
-                className="w-full rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]" />
+              <input
+                type='email'
+                placeholder='Email'
+                className='w-full rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#efc753]'
+              />
             </div>
             <div>
-              <input type='email' placeholder='Phone No.'
-                className="w-full rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]" />
+              <input
+                type='number'
+                placeholder='Teléfono de contacto'
+                className='w-full rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#efc753]'
+              />
             </div>
             <div>
-              <input type='text' placeholder='Website'
-                className="w-full rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]" />
+              <input
+                type='text'
+                placeholder='Dirección'
+                className='w-full rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#efc753]'
+              />
             </div>
             <div>
-              <input type='text' placeholder='Company'
-                className="w-full rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]" />
+              <input
+                type='text'
+                placeholder='Empresa'
+                className='w-full rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#efc753]'
+              />
             </div>
             <div>
-              <input type='text' placeholder='Subject'
-                className="w-full rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]" />
+              <input
+                type='text'
+                placeholder='Asunto'
+                className='w-full rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#efc753]'
+              />
             </div>
             <div>
-              <textarea placeholder='Message' rows="6"
-                className="col-span-full w-full rounded-lg px-4 border border-gray-300 text-sm pt-3 outline-[#007bff]"></textarea>
+              <textarea
+                placeholder='Mensaje'
+                rows='6'
+                className='col-span-full w-full rounded-lg px-4 border border-gray-300 text-sm pt-3 outline-[#efc753]'></textarea>
             </div>
-            <div className="flex items-center col-span-full">
-              <input id="checkbox1" type="checkbox"
-                className="w-4 h-4 mr-3" />
-              <label htmlFor="checkbox1" className="text-sm text-gray-400">I agree to the <a href="javascript:void(0);" className="underline">Terms and Conditions</a> and <a href="javascript:void(0);" className="underline">Privacy Policy</a></label>
+            <div className='flex items-center col-span-full'>
+              <input id='checkbox1' type='checkbox' className='w-4 h-4 mr-3' />
+              <label htmlFor='checkbox1' className='text-sm text-gray-400'>
+                Estoy de acuerdo con los{' '}
+                <Link href='javascript:void(0);' className='underline'>
+                  términos y condiciones
+                </Link>{' '}
+                y{' '}
+                <Link href='javascript:void(0);' className='underline'>
+                  la política de privacidad
+                </Link>
+              </label>
             </div>
 
-            <button type='button'
-              className="text-white w-max bg-[#007bff] hover:bg-blue-600 rounded-lg text-sm px-6 py-3 mt-4 tracking-wide">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' className="mr-2 inline" viewBox="0 0 548.244 548.244">
-                <path fillRule="evenodd" d="M392.19 156.054 211.268 281.667 22.032 218.58C8.823 214.168-.076 201.775 0 187.852c.077-13.923 9.078-26.24 22.338-30.498L506.15 1.549c11.5-3.697 24.123-.663 32.666 7.88 8.542 8.543 11.577 21.165 7.879 32.666L390.89 525.906c-4.258 13.26-16.575 22.261-30.498 22.338-13.923.076-26.316-8.823-30.728-22.032l-63.393-190.153z" clipRule="evenodd" data-original="#000000" />
-              </svg>
-              Send Message
+            <button
+              type='button'
+              className='text-gray-700 w-max bg-[#efc753] hover:bg-blue-600 rounded-lg text-sm px-4 py-3 mt-4 tracking-wide'>
+              <FaRegPaperPlane className='mr-2 inline' size={18} />
+              Enviar Mensaje
             </button>
           </form>
         </div>
       </div>
-    </div>
+      <div className='mt-8 px-24 grid grid-cols-3'>
+        {cardData.map((card) => (
+          <Card 
+            key={card.title}
+            title={card.title}
+            content={card.content}
+            content2={card.content2}
+            icon={card.icon}
+            isContactPage
+          />
+        ))}
+      </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
