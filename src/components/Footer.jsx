@@ -3,73 +3,88 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer className='bg-white dark:bg-gray-900'>
+      <footer className='bg-gradient-to-r from-gray-900 to-primary'>
         <div className='mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8'>
           <div className='md:flex md:justify-between'>
             <div className='mb-6 md:mb-0'>
-              <Link to='https://flowbite.com/' className='flex items-center'>
+              <Link to='/' className='flex items-center'>
                 <img
-                  src='https://flowbite.com/docs/images/logo.svg'
-                  className='h-8 me-3'
+                  src='/logo-sls-blanco.png'
+                  className='h-10 me-3'
                   alt='FlowBite Logo'
                 />
-                <span className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
-                  Flowbite
+                <span className='hidden self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
+                 SLS Logistics
                 </span>
               </Link>
             </div>
-            <div className='grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3'>
+            <div className='grid grid-cols-1 gap-8 sm:gap-8 sm:grid-cols-2'>
               <div>
                 <h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white'>
-                  Resources
+                  Información
                 </h2>
-                <ul className='text-gray-500 dark:text-gray-400 font-medium'>
-                  <li className='mb-4'>
-                    <Link to='https://flowbite.com/' className='hover:underline'>
-                      Flowbite
+                <ul className='text-gray-200 dark:text-gray-400 font-medium'>
+                  <li className='mb-2'>
+                    <Link to='/sobre-nosotros' className='hover:underline'>
+                      Quiénes Somos
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link to='/contacto' className='hover:underline'>
+                      Contacto
                     </Link>
                   </li>
                   <li>
-                    <Link to='https://tailwindcss.com/' className='hover:underline'>
-                      Tailwind CSS
+                    <Link to='/actualidad' className='hover:underline'>
+                      Actualidad
                     </Link>
                   </li>
                 </ul>
               </div>
-              <div>
-                <h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white'>
-                  Follow us
-                </h2>
-                <ul className='text-gray-500 dark:text-gray-400 font-medium'>
-                  <li className='mb-4'>
-                    <Link
-                      to='https://github.com/themesberg/flowbite'
-                      className='hover:underline '>
-                      Github
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to='https://discord.gg/4eeurUVvTy'
-                      className='hover:underline'>
-                      Discord
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
+              {/* <div>
                 <h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white'>
                   Legal
                 </h2>
                 <ul className='text-gray-500 dark:text-gray-400 font-medium'>
-                  <li className='mb-4'>
-                    <Link to='#' className='hover:underline'>
-                      Privacy Policy
+                  <li className='mb-2'>
+                    <Link
+                      to='/'
+                      className='hover:underline '>
+                      Aviso Legal
                     </Link>
                   </li>
-                  <li>
-                    <Link to='#' className='hover:underline'>
-                      Terms &amp; Conditions
+                  <li className="mb-2">
+                    <Link
+                      to='/'
+                      className='hover:underline'>
+                      Política de privacidad
+                    </Link>
+                  </li>
+                </ul>
+              </div> */}
+              <div>
+                <h2 className='mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white'>
+                  Legal
+                </h2>
+                <ul className='text-gray-200 dark:text-gray-400 font-medium'>
+                  <li className='mb-2'>
+                    <Link to='/' className='hover:underline'>
+                      Política de privacidad
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link to='/' className='hover:underline'>
+                      Política de Cookies
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link to='/' className='hover:underline'>
+                      Declaración de Accesibilidad
+                    </Link>
+                  </li>
+                  <li className="mb-2">
+                    <Link to='/' className='hover:underline'>
+                      Aviso Legal
                     </Link>
                   </li>
                 </ul>
