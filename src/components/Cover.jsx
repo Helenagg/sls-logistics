@@ -29,7 +29,7 @@ const Cover = () => {
             EMPRESA DE TRANSPORTE DE ALIMENTACIÓN
           </h3>
           <button className='bg-transparent border border-primary text-primary rounded-sm p-2'>
-            <Link to='/'>Nuestros servicios</Link>
+            <Link to='/sobre-nosotros'>Nuestros servicios</Link>
           </button>
           <p className='text-base text-white text-center -mt-16 px-40'>
             Somos una empresa dedicada al transporte, mensajería, logística y
