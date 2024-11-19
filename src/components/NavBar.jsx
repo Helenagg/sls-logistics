@@ -89,7 +89,7 @@ const NavBar = () => {
               </li>
               <li>
                 <Link
-                  to='/'
+                  to='/actualidad'
                   className='block py-2 px-3 md:p-0 text-white hover:text-primary rounded'
                 >
                   Actualidad

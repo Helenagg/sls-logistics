@@ -7,6 +7,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import Blog from './pages/Blog';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/sobre-nosotros' element={<About />} />
         <Route path='/contacto' element={<Contact />} />
+        <Route path='/actualidad' element={<Blog />} />
       </Routes>
       <Footer />
     </>
