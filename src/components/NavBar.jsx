@@ -81,7 +81,7 @@ const NavBar = () => {
               </li>
               <li>
                 <Link
-                  to='/'
+                  to='/contacto'
                   className='block py-2 px-3 md:p-0 text-white hover:text-primary rounded'
                 >
                   Contacto
