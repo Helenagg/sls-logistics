@@ -17,12 +17,7 @@ const Cover = () => {
         </video>
         <div className='absolute top-0 left-0 w-full h-full bg-black opacity-60'></div>
         <div className='relative z-10 flex flex-col items-center justify-start gap-28 w-full h-full'>
-          <img
-            src='/logo-sls-blanco.png'
-            className='h-20'
-            alt='Sls Logistics'
-          />
-          <h1 className='text-white text-5xl font-bold self-center mt-20'>
+          <h1 className='text-white text-5xl font-bold self-center mt-40'>
             COMPROMETIDOS CON TU NEGOCIO
           </h1>
           <h3 className='text-primary text-2xl font-bold self-center mt-4'>

@@ -37,12 +37,7 @@ const Blog = ({ isHomePage }) => {
   return (
     <div className={`bg-gray-900 text-white`}>
       <div className='flex flex-col items-center justify-start w-full h-full'>
-        <img
-          src='/logo-sls-blanco.png'
-          className={`h-20 ${isHomePage ? 'hidden' : 'block'}`}
-          alt='Sls Logistics'
-        />
-        <h1 className='text-primary text-3xl font-bold self-center mt-10'>
+        <h1 className='text-primary text-3xl font-bold self-center mt-40'>
           Noticias de actualidad
         </h1>
         <div className="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">

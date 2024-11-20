@@ -10,7 +10,7 @@ const NavBar = () => {
       ([entry]) => {
         setIsScrolled(!entry.isIntersecting);
       },
-      { root: null, threshold: 0 }
+      { root: null, threshold: 1.0 }
     );
 
     if (navRef.current) {
@@ -24,10 +24,10 @@ const NavBar = () => {
 
   return (
     <>
-      <div className='h-1 bg-black opacity-80' ref={navRef}></div>
+      <div className='h-1 bg-gray-900' ref={navRef}></div>
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${
-          isScrolled ? 'translate-y-0 bg-black' : '-translate-y-full'
+          isScrolled ? 'translate-y-0 bg-gray-900' : '-translate-y-0'
         } border-gray-200 dark:bg-gray-800 dark:border-gray-700`}
       >
         <div className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>

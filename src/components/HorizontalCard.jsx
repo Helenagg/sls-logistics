@@ -4,14 +4,14 @@ const HorizontalCard = () => {
   return (
     <>
       <div className='flex flex-col items-center bg-gray-900 border border-gray-400 rounded-lg shadow md:flex-row  dark:border-gray-700 dark:bg-gray-800'>
-        <div className="w-full md:w-1/3 p-2">
+        <div className="w-full md:w-1/3 p-0">
         <img
-          className='object-contain w-full h-full rounded-lg'
-          src='/public/assets/img/truck.jpg'
+          className='object-contain w-full h-full rounded-l-lg'
+          src='/assets/img/truck.jpg'
           alt=''
         />
         </div>
-        <div className='flex flex-col justify-between p-4 leading-normal w-full md:w-2/3'>
+        <div className='flex flex-col justify-between p-4 leading-normal w-full md:w-2/3 mx-4'>
           <h5 className='mb-2 text-2xl font-bold tracking-tight text-primary dark:text-white'>
             Actualidad
           </h5>
