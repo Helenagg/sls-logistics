@@ -30,17 +30,12 @@ const Contact = () => {
       <div className='bg-gray-900'>
         <div className='bg-gradient-to-b from-primary to-gray-900 w-full h-72'>
           <div className='flex flex-col items-center justify-start w-full h-full'>
-            <img
-              src='/logo-sls-blanco.png'
-              className={`h-20`}
-              alt='Sls Logistics'
-            />
-            <h1 className='text-primary text-3xl font-bold self-center mt-10'>
+            <h1 className='text-primary text-3xl font-bold self-center mt-40'>
               Contacto
             </h1>
           </div>
         </div>
-        <div className='-mt-20 mb-6 px-4'>
+        <div className='-mt-10 mb-6 px-4'>
           <ContactForm />
         </div>
         <div className='mt-8 px-24 grid grid-cols-3'>
