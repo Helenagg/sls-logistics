@@ -23,17 +23,17 @@ const Footer = () => {
             </div>
             <div>
               <ul className='text-primary dark:text-gray-400 font-medium flex gap-10'>
-                <li className='border border-primary rounded-lg bg-black p-3'>
+                <li className='border border-primary rounded-lg bg-transparent p-3'>
                   <Link to='/' className='hover:underline '>
                     <FaFacebookSquare size={30} />
                   </Link>
                 </li>
-                <li className='border border-primary rounded-lg bg-black p-3'>
+                <li className='border border-primary rounded-lg bg-transparent p-3'>
                   <Link to='/' className='hover:underline'>
                     <FaLinkedin size={30} />
                   </Link>
                 </li>
-                <li className='border border-primary rounded-lg bg-black p-3'>
+                <li className='border border-primary rounded-lg bg-transparent p-3'>
                   <Link to='/' className='hover:underline'>
                     <FaInstagram size={30} />
                   </Link>
@@ -70,22 +70,22 @@ const Footer = () => {
                 </h2>
                 <ul className='text-gray-200 dark:text-gray-400 font-medium'>
                   <li className='mb-2'>
-                    <Link to='/' className='hover:underline'>
+                    <Link to='/privacidad' className='hover:underline'>
                       Política de privacidad
                     </Link>
                   </li>
                   <li className='mb-2'>
-                    <Link to='/' className='hover:underline'>
+                    <Link to='/cookies' className='hover:underline'>
                       Política de Cookies
                     </Link>
                   </li>
                   <li className='mb-2'>
-                    <Link to='/' className='hover:underline'>
+                    <Link to='/accesibilidad' className='hover:underline'>
                       Declaración de Accesibilidad
                     </Link>
                   </li>
                   <li className='mb-2'>
-                    <Link to='/' className='hover:underline'>
+                    <Link to='/legal' className='hover:underline'>
                       Aviso Legal
                     </Link>
                   </li>
