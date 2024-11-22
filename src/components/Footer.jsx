@@ -75,7 +75,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className='mb-2'>
-                    <Link to='/' className='hover:underline'>
+                    <Link to='/cookies' className='hover:underline'>
                       Política de Cookies
                     </Link>
                   </li>

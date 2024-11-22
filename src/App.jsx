@@ -10,6 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Blog from './pages/Blog';
 import Privacy from './pages/Privacy';
 import Legal from './pages/Legal';
+import Cookies from './pages/Cookies';
 
 //TODO: Pendiente confirmar como van a ser los post si con enlances a noticias o con otra pagina con el desarrollo de la noticia
 //TODO: Textos legales
@@ -28,6 +29,7 @@ function App() {
         <Route path='/actualidad' element={<Blog />} />
         <Route path='/privacidad' element={<Privacy />} />
         <Route path='/legal' element={<Legal />} />
+        <Route path='/cookies' element={<Cookies />} />
       </Routes>
       <Footer />
     </>
