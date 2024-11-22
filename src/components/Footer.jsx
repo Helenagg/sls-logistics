@@ -23,17 +23,17 @@ const Footer = () => {
             </div>
             <div>
               <ul className='text-primary dark:text-gray-400 font-medium flex gap-10'>
-                <li className='border border-primary rounded-lg bg-black p-3'>
+                <li className='border border-primary rounded-lg bg-transparent p-3'>
                   <Link to='/' className='hover:underline '>
                     <FaFacebookSquare size={30} />
                   </Link>
                 </li>
-                <li className='border border-primary rounded-lg bg-black p-3'>
+                <li className='border border-primary rounded-lg bg-transparent p-3'>
                   <Link to='/' className='hover:underline'>
                     <FaLinkedin size={30} />
                   </Link>
                 </li>
-                <li className='border border-primary rounded-lg bg-black p-3'>
+                <li className='border border-primary rounded-lg bg-transparent p-3'>
                   <Link to='/' className='hover:underline'>
                     <FaInstagram size={30} />
                   </Link>
