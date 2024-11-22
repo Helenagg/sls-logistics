@@ -80,7 +80,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className='mb-2'>
-                    <Link to='/' className='hover:underline'>
+                    <Link to='/accesibilidad' className='hover:underline'>
                       Declaración de Accesibilidad
                     </Link>
                   </li>
