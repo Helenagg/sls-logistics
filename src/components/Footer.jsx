@@ -70,7 +70,7 @@ const Footer = () => {
                 </h2>
                 <ul className='text-gray-200 dark:text-gray-400 font-medium'>
                   <li className='mb-2'>
-                    <Link to='/' className='hover:underline'>
+                    <Link to='/privacidad' className='hover:underline'>
                       Política de privacidad
                     </Link>
                   </li>
@@ -85,7 +85,7 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className='mb-2'>
-                    <Link to='/' className='hover:underline'>
+                    <Link to='/legal' className='hover:underline'>
                       Aviso Legal
                     </Link>
                   </li>
