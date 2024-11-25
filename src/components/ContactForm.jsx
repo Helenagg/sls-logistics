@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { FaRegPaperPlane } from 'react-icons/fa';
+import AccessibleButton from './Accesibility/AccessibleButton';
 
 const ContactForm = () => {
   return (
@@ -72,12 +73,12 @@ const ContactForm = () => {
             </label>
           </div>
 
-          <button
+          <AccessibleButton
             type='button'
             className='text-gray-700 w-max bg-[#efc753] hover:bg-blue-600 rounded-lg text-sm px-4 py-3 mt-4 tracking-wide'>
             <FaRegPaperPlane className='mr-2 inline' size={18} />
             Enviar Mensaje
-          </button>
+          </AccessibleButton>
         </form>
       </div>
     </>
