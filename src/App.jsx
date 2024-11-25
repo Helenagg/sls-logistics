@@ -12,9 +12,10 @@ import Privacy from './pages/Privacy';
 import Legal from './pages/Legal';
 import Cookies from './pages/Cookies';
 import Accesibility from './pages/Accesibility';
+import CookiesBanner from './components/CookiesBanner';
 
 //TODO: Pendiente confirmar como van a ser los post si con enlances a noticias o con otra pagina con el desarrollo de la noticia
-//TODO: Cookies
+//TODO: Cookies pendiente asigar usos
 //TODO: Responsive
 //TODO: Navbar Mobile
 
@@ -33,6 +34,7 @@ function App() {
         <Route path='/cookies' element={<Cookies />} />
         <Route path='/accesibilidad' element={<Accesibility />} />
       </Routes>
+      <CookiesBanner />
       <Footer />
     </>
   );
