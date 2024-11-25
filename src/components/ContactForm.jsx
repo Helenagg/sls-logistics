@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom';
 import { FaRegPaperPlane } from 'react-icons/fa';
+import AccessibleButton from './Accessibility/AccessibleButton';
+import AccessibleLink from './Accessibility/AccessibleLink';
 
 const ContactForm = () => {
   return (
@@ -62,22 +63,23 @@ const ContactForm = () => {
             <input id='checkbox1' type='checkbox' className='w-4 h-4 mr-3' />
             <label htmlFor='checkbox1' className='text-sm text-gray-400'>
               Estoy de acuerdo con los{' '}
-              <Link href='javascript:void(0);' className='underline'>
-                términos y condiciones
-              </Link>{' '}
-              y{' '}
-              <Link href='javascript:void(0);' className='underline'>
-                la política de privacidad
-              </Link>
+              <AccessibleLink to='/privacidad' className='underline' aria-label='Ir a política de privacidad'>
+                política de privacidad
+              </AccessibleLink>{' '}
+              y he revisado el{' '}
+              <AccessibleLink href='/legal' className='underline' aria-label='Ir a aviso legal'>
+                aviso legal
+              </AccessibleLink>
             </label>
           </div>
 
-          <button
+          <AccessibleButton
             type='button'
+            arialabel='Enviar Mensaje'
             className='text-gray-700 w-max bg-[#efc753] hover:bg-blue-600 rounded-lg text-sm px-4 py-3 mt-4 tracking-wide'>
             <FaRegPaperPlane className='mr-2 inline' size={18} />
             Enviar Mensaje
-          </button>
+          </AccessibleButton>
         </form>
       </div>
     </>

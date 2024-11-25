@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import AccessibleLink from "./Accessibility/AccessibleLink";
 
 const HorizontalCard = () => {
   return (
@@ -18,9 +18,7 @@ const HorizontalCard = () => {
           <p className='mb-3 font-normal text-white dark:text-gray-400'>
             En nuestro apartado de actualidad encontrarás noticias de interés relacionadas con el sector del transporte de mercancias.
           </p>
-          <button className='bg-transparent border border-primary hover:border-white text-primary hover:text-white rounded-sm p-2 w-1/4 mt-2'>
-            <Link to='/actualidad'>Ir a actualidad</Link>
-          </button>
+            <AccessibleLink to='/actualidad' className='bg-transparent border border-primary hover:border-white text-primary hover:text-white rounded-sm p-2 w-1/4 mt-2 text-center'>Ir a actualidad</AccessibleLink>
         </div>
       </div>
     </>

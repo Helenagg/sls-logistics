@@ -78,7 +78,7 @@ const Accesibility = () => {
         claridad, los hechos, razones y petición que permitan constatar que se
         trata de una solicitud razonable y legítima. Las quejas y reclamaciones
         sobre información accesible se realizarán a través del email
-        joyeria@joyeriaatlantico.com
+        info@slsanbar.es
       </p>
       <h2 className='mt-10 text-2xl text-primary font-bold'>
         PROCEDIMIENTO DE APLICACIÓN

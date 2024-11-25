@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { FaFacebookSquare } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
+import AccessibleLink from './Accessibility/AccessibleLink';
 
 const Footer = () => {
   return (
@@ -10,33 +11,33 @@ const Footer = () => {
         <div className='mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8'>
           <div className='md:flex md:justify-between'>
             <div className='mb-6 md:mb-0'>
-              <Link to='/' className='flex items-center'>
+              <AccessibleLink to='/' className='flex items-center' aria-label='Ir a página de inicio'>
                 <img
                   src='/logo-sls-blanco.png'
                   className='h-10 me-3'
-                  alt='FlowBite Logo'
+                  alt='Logo SLS Logistics'
                 />
                 <span className='hidden self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
                   SLS Logistics
                 </span>
-              </Link>
+              </AccessibleLink>
             </div>
             <div>
               <ul className='text-primary dark:text-gray-400 font-medium flex gap-10'>
                 <li className='border border-primary rounded-lg bg-transparent p-3'>
-                  <Link to='/' className='hover:underline '>
+                  <AccessibleLink to='/' aria-label='Ir a página de Facebook' className='hover:underline '>
                     <FaFacebookSquare size={30} />
-                  </Link>
+                  </AccessibleLink>
                 </li>
                 <li className='border border-primary rounded-lg bg-transparent p-3'>
-                  <Link to='/' className='hover:underline'>
+                  <AccessibleLink to='/' className='hover:underline' aria-label='Ir a página de Linkedin'>
                     <FaLinkedin size={30} />
-                  </Link>
+                  </AccessibleLink>
                 </li>
                 <li className='border border-primary rounded-lg bg-transparent p-3'>
-                  <Link to='/' className='hover:underline'>
+                  <AccessibleLink to='/' className='hover:underline' aria-label='Ir a página de Instagram'>
                     <FaInstagram size={30} />
-                  </Link>
+                  </AccessibleLink>
                 </li>
               </ul>
             </div>
@@ -47,47 +48,46 @@ const Footer = () => {
                 </h2>
                 <ul className='text-gray-200 dark:text-gray-400 font-medium'>
                   <li className='mb-2'>
-                    <Link to='/sobre-nosotros' className='hover:underline'>
+                    <AccessibleLink to='/sobre-nosotros' className='hover:underline' aria-label='Ir a quiénes somos'>
                       Quiénes Somos
-                    </Link>
+                    </AccessibleLink>
                   </li>
                   <li className='mb-2'>
-                    <Link to='/contacto' className='hover:underline'>
+                    <AccessibleLink to='/contacto' className='hover:underline' aria-label='Ir a contacto'>
                       Contacto
-                    </Link>
+                    </AccessibleLink>
                   </li>
                   <li>
-                    <Link to='/actualidad' className='hover:underline'>
+                    <AccessibleLink to='/actualidad' className='hover:underline' aria-label='Ir a actualidad'>
                       Actualidad
-                    </Link>
+                    </AccessibleLink>
                   </li>
                 </ul>
               </div>
-
               <div>
                 <h2 className='mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white'>
                   Legal
                 </h2>
                 <ul className='text-gray-200 dark:text-gray-400 font-medium'>
                   <li className='mb-2'>
-                    <Link to='/privacidad' className='hover:underline'>
+                    <AccessibleLink to='/privacidad' className='hover:underline' aria-label='Ir a política de privacidad'>
                       Política de privacidad
-                    </Link>
+                    </AccessibleLink>
                   </li>
                   <li className='mb-2'>
-                    <Link to='/cookies' className='hover:underline'>
+                    <AccessibleLink to='/cookies' className='hover:underline' aria-label='Ir a política de cookies'>
                       Política de Cookies
-                    </Link>
+                    </AccessibleLink>
                   </li>
                   <li className='mb-2'>
-                    <Link to='/accesibilidad' className='hover:underline'>
+                    <AccessibleLink to='/accesibilidad' className='hover:underline' aria-label='Ir a declaración de accesibilidad'>
                       Declaración de Accesibilidad
-                    </Link>
+                    </AccessibleLink>
                   </li>
                   <li className='mb-2'>
-                    <Link to='/legal' className='hover:underline'>
+                    <AccessibleLink to='/legal' className='hover:underline' aria-label='Ir a aviso legal'>
                       Aviso Legal
-                    </Link>
+                    </AccessibleLink>
                   </li>
                 </ul>
               </div>
