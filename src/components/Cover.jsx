@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
 import videoCover from '/assets/video/cover-slslogistics.mp4';
-import AccessibleButton from './Accesibility/AccessibleButton';
+import AccessibleLink from './Accessibility/AccessibleLink';
 
 const Cover = () => {
   return (
@@ -24,9 +23,7 @@ const Cover = () => {
           <h3 className='text-primary text-2xl font-bold self-center mt-4'>
             EMPRESA DE TRANSPORTE DE ALIMENTACIÓN
           </h3>
-          <AccessibleButton className='bg-transparent border border-primary text-primary rounded-sm p-2'>
-            <Link to='/sobre-nosotros'>Nuestros servicios</Link>
-          </AccessibleButton>
+            <AccessibleLink to='/sobre-nosotros' aria-label='Nuestros servicios' className='bg-transparent border border-primary text-primary rounded-sm p-2'>Nuestros servicios</AccessibleLink>
           <p className='text-base text-white text-center -mt-16 px-40'>
             Somos una empresa dedicada al transporte, mensajería, logística y
             almacenaje.  Os ofrecemos un trato personalizado y nos ajustamos a vuestras

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import AccessibleLink from "../components/Accessibility/AccessibleLink";
 
 const Cookies = () => {
   return (
@@ -70,10 +70,10 @@ const Cookies = () => {
         </p>
         <p className='mt-4 text-left text-secondary-green-dark'>
           Esta Política de Cookies, se complementa con nuestra{' '}
-          <Link to='/privacidad'>
+          <AccessibleLink to='/privacidad' aria-label='Ir a privacidad'>
             {' '}
             Política de Privacidad
-          </Link>{' '}
+          </AccessibleLink>{' '}
           en lo no regulado expresamente en la misma
         </p>
         <h2 className='mt-10 text-xl text-primary font-bold'>
@@ -226,39 +226,39 @@ const Cookies = () => {
             <ul className='ml-4 text-left text-secondary-green-dark'>
               <li>
                 -{' '}
-                <Link to='https://support.google.com/chrome/answer/95647?hl=es'>
+                <AccessibleLink to='https://support.google.com/chrome/answer/95647?hl=es' aria-label='Página de soporte de Chrome'>
                   Chrome
-                </Link>
+                </AccessibleLink>
               </li>
               <li>
                 -{' '}
-                <Link to='https://support.microsoft.com/es-es/windows/administrar-cookies-en-microsoft-edge-ver-permitir-bloquear-eliminar-y-usar-168dab11-0753-043d-7c16-ede5947fc64d'>
+                <AccessibleLink aria-label='Página de soporte de Internet Explorer' to='https://support.microsoft.com/es-es/windows/administrar-cookies-en-microsoft-edge-ver-permitir-bloquear-eliminar-y-usar-168dab11-0753-043d-7c16-ede5947fc64d'>
                   Internet Explorer
-                </Link>
+                </AccessibleLink>
               </li>
               <li>
                 -{' '}
-                <Link to='https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias?redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we&redirectlocale=es'>
+                <AccessibleLink aria-label='Página de soporte de FireFox' to='https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias?redirectslug=habilitar-y-deshabilitar-cookies-que-los-sitios-we&redirectlocale=es'>
                   Firefox
-                </Link>
+                </AccessibleLink>
               </li>
               <li>
                 -{' '}
-                <Link to='https://support.apple.com/es-es/guide/safari/sfri11471/mac'>
+                <AccessibleLink aria-label='Página de soporte de Safari' to='https://support.apple.com/es-es/guide/safari/sfri11471/mac'>
                   Safari
-                </Link>
+                </AccessibleLink>
               </li>
               <li>
                 -{' '}
-                <Link to='https://support.apple.com/es-es/105082'>
+                <AccessibleLink aria-label='Página de soporte para Iphone y Ipad' to='https://support.apple.com/es-es/105082'>
                   Safari para IOS (iPhone y iPad)
-                </Link>
+                </AccessibleLink>
               </li>
               <li>
                 -{' '}
-                <Link to='https://support.google.com/chrome/answer/114662?hl=es&visit_id=637556507745451445-1489228800&rd=1'>
+                <AccessibleLink aria-label='Página de soporte de Chrome para Android' to='https://support.google.com/chrome/answer/114662?hl=es&visit_id=637556507745451445-1489228800&rd=1'>
                   Chrome para Android
-                </Link>
+                </AccessibleLink>
               </li>
               <li>
                 Software de navegación utilizado o sistema operativo de su
@@ -299,7 +299,7 @@ const Cookies = () => {
         <p className='mt-4 text-left text-secondary-green-dark'>
           Asimismo, puede ejercer los derechos que le confiere la normativa
           vigente conforme a lo establecido en nuestra{' '}
-          <Link to='/privacy'>Política de Privacidad.</Link>
+          <AccessibleLink to='/privacy' aria-label='Ir a política de privacidad'>Política de Privacidad.</AccessibleLink>
         </p>
       </div>
     </div>

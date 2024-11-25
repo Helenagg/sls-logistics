@@ -34,7 +34,7 @@ const Legal = () => {
           <li>– Denominación social: SL sanbar</li>
           <li>– Nombre comercial: SL sanbar</li>
           <li>– CIF: BXXXXXXX</li>
-          <li>– Correo electrónico: joyeria@joyeriaatlantico.com</li>
+          <li>– Correo electrónico: info@slsanbar.es</li>
           <li>– Domicilio: Sevilla</li>
         </ul>
         <h2 className='mt-10 text-xl text-primary font-bold'>2. OBJETO:</h2>

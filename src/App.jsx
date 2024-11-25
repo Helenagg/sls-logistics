@@ -14,7 +14,7 @@ import Cookies from './pages/Cookies';
 import Accesibility from './pages/Accesibility';
 
 //TODO: Pendiente confirmar como van a ser los post si con enlances a noticias o con otra pagina con el desarrollo de la noticia
-//TODO: Accesibilidad y cookies
+//TODO: Cookies
 //TODO: Responsive
 //TODO: Navbar Mobile
 

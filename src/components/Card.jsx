@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { FaArrowRightLong } from 'react-icons/fa6';
-import AccessibleButton from './Accesibility/AccessibleButton';
+import AccessibleButton from './Accessibility/AccessibleButton';
+import AccessibleLink from './Accessibility/AccessibleLink';
 
 const Card = ({
   title,
@@ -50,12 +51,10 @@ const Card = ({
             </p>
           )}
           {isBlogPage ? (
-            <AccessibleButton type='button' className='text-gray-800 '>
-              <Link to='/' className='flex gap-4'>
+              <AccessibleLink to='/' className='flex gap-4 text-gray-800' aria-label='Leer más'>
                 Leer más{''}
                 <FaArrowRightLong className='mt-1.5' />{' '}
-              </Link>
-            </AccessibleButton>
+              </AccessibleLink>
           ) : (
             ''
           )}
