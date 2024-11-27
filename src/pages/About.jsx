@@ -35,7 +35,7 @@ const About = ({ isHomePage }) => {
     <>
       <div className={`bg-gray-900 text-white`}>
         <div className='flex flex-col items-center justify-start w-full h-full'>
-          <h1 className='text-primary text-3xl font-bold self-center mt-40'>
+          <h1 className='text-primary text-3xl font-bold self-center mt-20'>
             Sobre nosotros
           </h1>
           <div className='p-10 text-justify leading-loose'>

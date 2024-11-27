@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
             <div className='grid grid-cols-1 gap-8 sm:gap-8 sm:grid-cols-2'>
               <div>
-                <h2 className='mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white'>
+                <h2 className='mt-6 md:mt-0 mb-6 text-sm font-semibold text-gray-400 uppercase dark:text-white'>
                   Información
                 </h2>
                 <ul className='text-gray-200 dark:text-gray-400 font-medium'>

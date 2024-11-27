@@ -17,7 +17,7 @@ import CookiesBanner from './components/CookiesBanner';
 //TODO: Pendiente confirmar como van a ser los post si con enlances a noticias o con otra pagina con el desarrollo de la noticia
 //TODO: Cookies pendiente asigar usos
 //TODO: Responsive
-//TODO: Navbar Mobile
+//TODO: backend para el formulario de contacto
 
 function App() {
   return (

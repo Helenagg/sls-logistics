@@ -18,7 +18,7 @@ const HorizontalCard = () => {
           <p className='mb-3 font-normal text-white dark:text-gray-400'>
             En nuestro apartado de actualidad encontrarás noticias de interés relacionadas con el sector del transporte de mercancias.
           </p>
-            <AccessibleLink to='/actualidad' className='bg-transparent border border-primary hover:border-white text-primary hover:text-white rounded-sm p-2 w-1/4 mt-2 text-center'>Ir a actualidad</AccessibleLink>
+            <AccessibleLink to='/actualidad' className='bg-transparent border border-primary hover:border-white text-primary hover:text-white rounded-sm p-2 w-1/2 md:w-1/4 mt-2 text-center'>Ir a actualidad</AccessibleLink>
         </div>
       </div>
     </>
