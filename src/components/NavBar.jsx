@@ -55,7 +55,7 @@ const NavBar = () => {
             <GrMenu size={30} />
           </AccessibleButton>
           <div
-            className={`${isOpen ? 'block bg-gray-900 text-center' : 'hidden'} w-full md:w-auto pr-0 md:pr-10 rounded-sm`}
+            className={`${isOpen ? 'block bg-gray-900 text-center' : 'hidden md:block'} w-full md:w-auto pr-0 md:pr-10 rounded-sm`}
             id='navbar-solid-bg'>
             <ul className='flex flex-col font-medium mt-4 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700'>
               <li>
