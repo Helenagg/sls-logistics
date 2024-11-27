@@ -1399,6 +1399,11 @@ video {
     padding-right: 1rem;
   }
 
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
   .md\:pr-10 {
     padding-right: 2.5rem;
   }
