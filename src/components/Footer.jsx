@@ -7,8 +7,8 @@ import AccessibleLink from './Accessibility/AccessibleLink';
 const Footer = () => {
   return (
     <>
-      <footer className='bg-gradient-to-b from-gray-900 to-primary'>
-        <div className='mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8'>
+      <footer className='bg-gradient-to-b from-gray-900 to-primary pt-0 md:pt-10'>
+        <div className='mx-auto w-full max-w-screen-xl px-6 p-4 py-6 lg:py-8'>
           <div className='md:flex md:justify-between'>
             <div className='mb-6 md:mb-0'>
               <AccessibleLink to='/' className='flex items-center' aria-label='Ir a página de inicio'>

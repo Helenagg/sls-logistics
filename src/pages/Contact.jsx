@@ -38,7 +38,7 @@ const Contact = () => {
         <div className='-mt-10 mb-6 px-4'>
           <ContactForm />
         </div>
-        <div className='mt-8 md:px-24 grid grid-cols-1 md:grid-cols-3'>
+        <div className='mt-8 md:px-24 grid grid-cols-1 md:grid-cols-3 justify-items-center'>
           {cardData.map((card) => (
             <Card
               key={card.title}
